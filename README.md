@@ -30,7 +30,7 @@ Run docker command to build image.
 Start a Docker container
 ------------------------
 
-### Start API manager from the buled image
+### Start API manager from the build image
 
 Start in interactive mode
 
