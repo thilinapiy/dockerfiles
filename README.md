@@ -36,7 +36,7 @@ Start in interactive mode
 
     docker run -i -t --name apim_test apim_image /bin/bash
         
-Start in deimon mode
+Start in daemon mode
 
     docker run -d    --name apim_test apim_image /bin/bash
 
