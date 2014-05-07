@@ -1,0 +1,7 @@
+Download and place following packs in this ('base/dist/') directory
+
+Download [Oracle JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) tar.gz (not JDK 8)
+eg:- jdk-7u55-linux-x64.tar.gz  
+
+Download [WSO2 Product](http://wso2.com/products/) 
+eg:- wso2am-1.6.0.zip
