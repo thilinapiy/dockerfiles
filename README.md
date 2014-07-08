@@ -8,7 +8,7 @@ Build a Docker container
 
 Get a git clone of the build repository.
 
-    git clone https://github.com/thilinapiy/dockerfiles
+    git clone https://github.com/thilinapiy/dockerfiles(https://github.com/thilinapiy/dockerfiles)
         
 Download [Oracle JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) tar.gz (not JDK 8) and place it in '/dockerfiles/base/dist/'
 
@@ -34,9 +34,9 @@ Start a Docker container
 
 Start in interactive mode
 
-    docker run -i -t --name apim_test apim_image /bin/bash
+    docker run -i -t --name apim_test apim_image 
         
 Start in daemon mode
 
-    docker run -d    --name apim_test apim_image /bin/bash
+    docker run -d    --name apim_test apim_image 
 

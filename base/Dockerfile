@@ -20,7 +20,7 @@
 # 	sudo docker build -t WSO2container .
 # 
 # Run a container using the buled image
-# 	sudo docker run -d -i -t --name WSO2Container1 WSO2container /bin/bash
+# 	sudo docker run -d -i -t --name WSO2Container1 WSO2container
 #
 # Login to the running container
 # 	sudo docker attach WSO2Container1
@@ -38,8 +38,8 @@ MAINTAINER Thilina Piyasundara <mail@thilina.org>
 # Update the container and install relevant packages
 RUN sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get -y upgrade
-RUN apt-get -y install unzip puppet
+#RUN apt-get -y upgrade
+RUN apt-get -y install unzip
 
 # Create /mnt/packs directory
 RUN mkdir -p /mnt/packs
@@ -69,3 +69,5 @@ ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 ENV JAVA_HOME /opt/java
 
 WORKDIR /root
+
+CMD /mnt/wso2am-1.6.0/bin/wso2server.sh
