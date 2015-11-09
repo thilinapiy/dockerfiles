@@ -1,0 +1,2 @@
+---
+mysql_server: "%{mysql_port_3306_tcp_addr}"

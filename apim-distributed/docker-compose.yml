@@ -1,0 +1,20 @@
+apim-node1:
+    container_name: apim-node1 
+    image: apim
+    environment:
+        - FACTER_fqdn=apimanager
+    links:
+        - mysql
+mysql-client:
+    container_name: mysql-client
+    image: mysql:5.6.27
+    volumes:
+        - ./dist/database:/mysql
+    command: sh -c /mysql/create_dbs.sh
+    links:
+        - mysql
+mysql:
+    container_name: mysql
+    image: mysql:5.6.27
+    environment:
+        - MYSQL_ROOT_PASSWORD=password
